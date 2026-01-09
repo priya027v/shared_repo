@@ -1,3 +1,6 @@
 def call() {
- sh 'sudo apt install maven -y'
+    sh '''
+        echo "Maven already installed, checking version"
+        mvn -version
+    '''
 }
